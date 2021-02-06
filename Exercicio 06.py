@@ -1,0 +1,5 @@
+print('Programa que mostra o dobro, o triplo e a raiz quadrada')
+valor = int(input('Digite o valor que você desejar: '))
+print('O dobro de {} é {}'.format(valor, valor*2))
+print('O triplo de {} é {}'.format(valor, valor*3))
+print('A raiz quadrada de {} é {:.2f}'.format(valor, valor**(1/2)))
