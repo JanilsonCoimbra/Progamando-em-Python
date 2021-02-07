@@ -6,4 +6,4 @@ nota4 = int(input('Digite a nota da quarta unidade: '))
 
 print('Agora vamos ver qual a média do aluno!')
 
-print('A média foi: {}'.format(nota1+nota2+nota3+nota4/4) )
+print('A média foi: {}'.format((nota1+nota2+nota3+nota4)/4) )
