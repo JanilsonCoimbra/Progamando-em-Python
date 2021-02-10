@@ -1,0 +1,5 @@
+print('Programa que ver quantas letras A aparecedentro de uma frase')
+frase = str(input('Digite a frase que deseja analisar...')).lower().strip()
+print('A primeira letra A aparece na {} posição'.format(frase.find('a')+1))
+print('A segunda letra A aparece na {} posição'.format(frase.rfind('a')+1))
+print('A letra A aparece {} vezes na frase'.format(frase.count('a')))
