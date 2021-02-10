@@ -1,6 +1,6 @@
-from math import floor
+from math import trunc
 from time import sleep
 print('Programa em python que mostra o numero inteiro de um float')
 num = float(input('Digite o valor de entrada: '))
-print('O numero inteiro de {} é {}'.format(num, floor(num)))
+print('O numero inteiro de {} é {}'.format(num, trunc(num)))
 sleep(10)
