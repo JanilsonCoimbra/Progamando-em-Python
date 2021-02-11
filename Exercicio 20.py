@@ -5,6 +5,6 @@ a2 = str(input('Nome do segundo aluno: '))
 a3 = str(input('Nome do terceiro aluno: '))
 a4 = str(input('Nome do quarto aluno: '))
 lista = [a1, a2, a3, a4]
-shuffle(lista)
+shuffle(lista) #Reordena de forma aleatoria a ordem da lista
 print('A ordem de apresentação será...')
 print(lista)
