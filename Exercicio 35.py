@@ -1,4 +1,7 @@
-print('Programa que mede os lados do triangulo e ver se é possivel formalo')
+print('\033[33m-=-'*22)
+print('\033[33mPrograma que mede os lados do triangulo e ver se é possivel formalo\033[m')
+print('\033[33m-=-'*22)
+print('\033[m')
 l1 = float(input('Lado 1 :'))
 l2 = float(input('Lado 2 :'))
 l3 = float(input('Lado 3 :'))
