@@ -10,7 +10,8 @@ if r == 1:
     print('Compra efetuada com sucesso.')
 elif r == 2:
     salario = float(input('Qual o seu salário? .'))
-    tempo = int(input('Pretende financiar por quanto tempo? .'))
+    tempo = int(input('Pretende financiar por quantos anos? .'))
+    tempo = tempo * 12
     if casa / tempo + casa / tempo*8/100 > salario*30/100:
         print('Seu financiamento foi negado por exerder R${:.2f} que corresponde a 30% do seu salário'.format(salario*30/100))
     else:
