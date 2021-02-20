@@ -5,17 +5,19 @@ opcao = ''
 while not opcao == 5:
     opcao = int(input('[ 1 ] somar\n[ 2 ] multiplicar\n[ 3 ] maior\n[ 4 ] novos números\n[ 5 ] sair do programa'))
     if opcao == 1:
-        print('A soma entre {} + {} = {}'.format(v1, v2, v1+v2))
-    if opcao == 2:
-        print('A multiplicacao de {} x {} = {}'.format(v1, v2, v1*v2))
-    if opcao == 3:
+        print('\033[33mA soma entre {} + {} = {}\033[m'.format(v1, v2, v1+v2))
+    elif opcao == 2:
+        print('\033[33mA multiplicacao de {} x {} = {}\033[m'.format(v1, v2, v1*v2))
+    elif opcao == 3:
         if v1 > v2:
-            print('Entre {} e {} o maior numero é {}'.format(v1, v2, v1))
+            print('\033[33mEntre {} e {} o maior numero é {}\033[m'.format(v1, v2, v1))
         elif v2 > v1:
-            print('Entre {} e {} o maior numero é {}'.format(v1, v2, v2))
+            print('\033[33mEntre {} e {} o maior numero é {}\033[m'.format(v1, v2, v2))
         else:
-            print('Os numeros {} e {} são IGUAIS'.format(v1, v2))
-    if opcao == 4:
-        v1 = int(input('Valor 1 :'))
-        v2 = int(input('Valor 2 :'))
+            print('\033[33mOs numeros {} e {} são IGUAIS\033[m'.format(v1, v2))
+    elif opcao == 4:
+        v1 = int(input('\033[33mValor 1 :\033[m'))
+        v2 = int(input('\033[33mValor 2 :\033[m'))
+    elif opcao > 5:
+        print('\033[33mOPÇÃO INVALIDA!\033[m')
 print('\033[33mOBRIGADO, VOLTE SEMPRE!\033[m')
