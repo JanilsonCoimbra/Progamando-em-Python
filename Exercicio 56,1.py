@@ -21,6 +21,3 @@ while not r == 'n' or c == 100:
 for o in range(0, c):
     print('[{}] :'.format(dezena[o]), end=' ')
     print(nome[o].upper())
-
-
-
