@@ -14,4 +14,5 @@ while not adc == 0:
     print('PAUSE')
     adc = int(input('\nDeseja mostrar quantos termos a mais?'))
 print('FIM')
+print('Foram mostrados na tela {} termos '.format(cont))
 
