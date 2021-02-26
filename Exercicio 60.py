@@ -10,7 +10,6 @@ while cont <= 10:
 print('FIM')
 
 
-
 '''for c in range(primeiro, ultimo+razao, razao):
     print('{} ->'.format(c), end=' ')
 print('FIM')'''
