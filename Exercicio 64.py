@@ -1,4 +1,4 @@
-#Digite um numero até o usuario digiatr 999 para parar
+#Digite um numero até o usuario digitar 999 para parar
 n = 0
 soma = 0
 while not n == 999:
