@@ -2,9 +2,10 @@
 cont = 0
 n = soma = 0
 while True:
-    cont += 1
-    if n == 999:
-        break
-    soma += n
     n = int(input(f'Digite num :'))
+    if n != 999:
+        soma += n
+        cont += 1
+    else:
+        break
 print(f'A soma dos {cont} numeros é {soma} ')
