@@ -1,5 +1,4 @@
 #Tabuada do numero digitado usando While True
-
 while True:
     cont = 0
     n = int(input('Digite um numero :'))
@@ -11,3 +10,4 @@ while True:
         if cont == 11:
             break
 print('TABUADA ENCERRADA!')
+
