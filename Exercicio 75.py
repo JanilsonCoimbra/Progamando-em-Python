@@ -3,7 +3,7 @@ lista = int(input('Digite um numero :')), int(input('Digite um numero :')), int(
 print(f'Você digitou os numeros {lista}')
 print('-' * 26)
 print(f'O numero 9 apareceu {lista.count(9)} vezes')
-print(f'o valor 3 apareceu na {lista.index(3) + 1}º posição')
+print('O valor 3 apareceu em posição {}'.format(lista.index(3) + 1 if lista.count(3) > 0 else "Nenhuma"))
 par = 0
 for c in range(0, len(lista)):
     if (lista[c] % 2 == 0) == True:
