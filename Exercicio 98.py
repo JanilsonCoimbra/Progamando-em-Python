@@ -3,14 +3,21 @@ from time import sleep
 def contagem(*p):
     print('-' * 40)
     print(f'Contagem de {p[0]} até {p[2]} contando de {p[1]} em {p[1]}')
+    inicio = p[0]
     passo = p[1]
     fim = p[2]
-    if p[1] == 0:
-        passo = 1
-    if p[0] > p[2]:
-        passo = p[1] - (p[1] + p[1])
-        fim -= 2
-    for c in range(p[0], fim+1, passo):
+    if inicio > fim:
+        passo = (passo - (passo * 2))
+        fim -= 1
+        if p[1] == 0:
+            passo = -1
+        if p[1] < 0:
+            passo = p[1]
+    if inicio < fim:
+        fim += 1
+        if passo == 0:
+            passo = 1
+    for c in range(p[0], fim, passo):
         print(c, end=' ')
         sleep(0.5)
     print()
