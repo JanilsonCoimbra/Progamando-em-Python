@@ -11,7 +11,6 @@ def voto(nasc):
         print(f'Com {idade} anos: VOTO é obrigatório!')
     elif idade > 65:
         print(f' Com {idade} anos: O VOTO é opcional')
-r = ''
 while True:
     voto(int(input('Em que ano você nascel?')))
     r = str(input('Continuar? [S/N]')).strip()[0]
