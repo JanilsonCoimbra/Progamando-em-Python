@@ -1,16 +1,17 @@
 #Função que ler nome de um jogador e seus gols e retorna os dados
-def ficha(nome='<desconhecido>', gol=0):
-    n = nome
-    g = gol
-    if g.isnumeric():
-        g = int(g)
+def ficha(nome, gol=0):
+    jogador = ''
+    gols = 0
+    if gol.isnumeric():
+        gols = gol
     else:
-        g = 0
-    if n.strip() == '':
-        ficha(gol=g)
+        gols = 0
+    if nome.strip() == '' or nome.isnumeric():
+        jogador = 'Desconhecido'
+        print('O nome do jogador foi deixado vazio ou numerico ')
     else:
-        ficha(n, g)
-    print(f'O jogador {nome} fez {g} gols')
+        jogador = nome
+    print(f'Nome: {jogador}, Gols: {gols}')
 
 
 ficha(str(input('Nome :')), input('Gols :'))
